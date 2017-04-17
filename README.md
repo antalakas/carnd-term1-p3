@@ -11,3 +11,8 @@ Udacity CarND, Term 1, Project 3: Behaviorial Cloning Project
 * video.mp4 is the generated video showing the agent's view for the reviewer
 * video.py is the tool used to create the video.mp4
 * carnd_term1_p3.webm is a video showing the screen capture while running the agent using model.h5 for two rounds in a row (full speed), to demonstrate the robustness of the solution (to be uploaded later because of size constraints)
+
+
+For the augmentation, i used utility functions from:
+
+https://chatbotslife.com/using-augmentation-to-mimic-human-driving-496b569760a9
