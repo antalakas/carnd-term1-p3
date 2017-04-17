@@ -96,22 +96,27 @@ The car was falling off the track... I used several different data directories t
 Some examples:
 
 Trained with images from Track 1, 4 rounds forward
+
 ![alt text][image7]
 
 Trained with images from Track 1, forward, back and additional images from difficult turns
+
 ![alt text][image4]
 
 To combat the cases of overfitting, I modified the model so that with a dropout right after the convolutional layers, as described earlier.
 
 This was one of the successful scenarios:
 Keras History - 3 epochs, successful, four rounds forward, additional images from difficult turns, all images flipped.
+
 ![alt text][image2]
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
 Interestingly enough the same actions with 8 epochs training lead to a result having 50% chance of failure:
 Keras History - 8 epochs, not always successful
+
 ![alt text][image3]
+
 The undefitting is obvious
 
 Following the success in track one, i repeatedly tried to train a more generalized model for Track 2, with not good results.
@@ -128,9 +133,11 @@ I modified the code in the following ways:
 * Randomly altering image brightness (lighter or darker)
 
 Training with images from Track 2
+
 ![alt text][image5]
 
 Training with images from Track 2 - Augmented
+
 ![alt text][image6]
 
 Indeed the epochs value was low, also i used only three rounds of forward drive plus flipping all images, plus augmenting as described.
